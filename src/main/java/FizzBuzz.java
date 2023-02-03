@@ -1,4 +1,4 @@
-
+ 
 public class FizzBuzz {
     /**
      * Return "Fizz" if a number n is divisible by 3, "Buzz" if divisible by 5, and "FizzBuzz" if divisible by both.
@@ -15,6 +15,19 @@ public class FizzBuzz {
      * divisible by both, return 'FizzBuzz'. If none of these are true, return a blank string "".
      */
     public String FizzBuzzGen(int n){
-        return "";
-    }
+        for (int i=1; i<=100; i++){
+            if (i%15==0) {
+                System.out.println("FizzBuzz" +" ");
+            }else if(i%3==0){
+                System.out.println("Fizz"+"");
+            }else if(i%5==0) {
+                System.out.println("Buzz"+" ");
+            }else {
+                System.out.println(i+" ");
+            }
+        }
+        return null;
+    }        
 }
+
+
